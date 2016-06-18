@@ -1,3 +1,4 @@
+import os
 import sys
 import random
 import urllib.request
@@ -28,21 +29,21 @@ def get_images():
                 src = img.get('src')
             else:
                 src = urljoin(_url, img.get('src'))
-                download_image(src)
+                download_image(src, count)
         return render_template("index.html", result=str((str(count) + " Images Downloaded !")))
     except requests.exceptions.HTTPError as error:
         return render_template("index.html", result=str(error))
 
 
-def download_image(url):
+def download_image(url, count):
     try:
-        name = random.randrange(1, 100)
-        image_name = str(name) + ".jpg"
-        urllib.request.urlretrieve(url, image_name)
+        image_name = str(count) + ".jpg"
+        image_path = os.path.join("images/", image_name)
+        urllib.request.urlretrieve(url, image_path)
     except ValueError:
         print("Invalid URL !")
     except:
-        print("Unknown Exception" + sys.exc_info()[0])
+        print("Unknown Exception" + str(sys.exc_info()[0]))
 
 
 if __name__ == "__main__":
