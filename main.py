@@ -26,14 +26,12 @@ def get_images():
             count += 1
             if (img.get('src'))[0:4] == 'http':
                 src = img.get('src')
-                print("If method : " + src)
             else:
                 src = urljoin(_url, img.get('src'))
-                print("Else method : " + src)
                 download_image(src)
-        return render_template("index.html", result=str(count))
+        return render_template("index.html", result=str((str(count) + " Images Downloaded !")))
     except requests.exceptions.HTTPError as error:
-        return render_template("index.html", result=error.code)
+        return render_template("index.html", result=str(error))
 
 
 def download_image(url):
