@@ -13,7 +13,7 @@
     </div>
 
     <div class="jumbotron">
-        <form class="form" method="post" action="/get_images">
+        <form name = "myForm" class="form" onsubmit="return checkURL()" method="post" action="/get_images">
             <h1>Enter URL</h1>
             <input type="name" name="inputURL" class="input-text" id="inputURL" placeholder="URL"
                    required autofocus>
@@ -30,6 +30,7 @@
         <p>&#169 Rahul Yadav</p>
     </footer>
 </div>
+<script src = "../static/script.js"></script>
 
 </body>
 </html>
