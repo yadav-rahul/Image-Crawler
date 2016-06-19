@@ -29,8 +29,11 @@ def get_images():
                 src = img.get('src')
             else:
                 src = urljoin(_url, img.get('src'))
-                download_image(src, count)
-        return render_template("index.html", result=str((str(count) + " Images Downloaded !")))
+            download_image(src, count)
+        if count == 1:
+            return render_template("index.html", result=str((str(count) + " Image Downloaded !")))
+        else:
+            return render_template("index.html", result=str((str(count) + " Images Downloaded !")))
     except requests.exceptions.HTTPError as error:
         return render_template("index.html", result=str(error))
 
