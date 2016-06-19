@@ -9,7 +9,7 @@ Image Crawler uses python for crawling web page and ***flask*** for UI changes.
 	git clone https://github.com/yadav-rahul/Image-Crawler & cd Image-Crawler
 	python main.py
 	got to http://localhost:5000/ in your browser
-	enter URL and enjoy!
+	enter URL and see the magic!
 
 ## License
 Image Crawler comes under MIT 2016 License.
