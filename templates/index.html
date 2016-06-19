@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="100;url=http://localhost:5000/"/>
     <title>Image Crawler</title>
     <link href="../static/style.css" rel="stylesheet">
 
@@ -13,7 +14,7 @@
     </div>
 
     <div class="jumbotron">
-        <form name = "myForm" class="form" onsubmit="return checkURL()" method="post" action="/get_images">
+        <form name="myForm" class="form" onsubmit="return checkURL()" method="post" action="/get_images">
             <h1>Enter URL</h1>
             <input type="name" name="inputURL" class="input-text" id="inputURL" placeholder="URL"
                    required autofocus>
@@ -22,7 +23,7 @@
         </form>
     </div>
     <div class="jumbotron">
-        <h3>{{result}}</h3>
+        <h3>{{ result }}</h3>
     </div>
 
 
@@ -30,7 +31,7 @@
         <p>&#169 Rahul Yadav</p>
     </footer>
 </div>
-<script src = "../static/script.js"></script>
+<script src="../static/script.js"></script>
 
 </body>
 </html>
