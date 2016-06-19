@@ -1,5 +1,5 @@
 # Image Crawler
-This app takes an url from the user and then automatically download all images available under that url in just one click.
+This app takes an url from the user and with just one click download all images from the url under `images` directory.
 
 ## Working
 Image Crawler uses python for crawling web page and ***flask*** for UI changes.
