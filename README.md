@@ -2,7 +2,7 @@
 This app takes an url from the user and with just one click download all images from the url under `images` directory.
 
 ## Working
-Image Crawler uses python for crawling web page and ***flask*** for UI changes.
+Image Crawler uses python's ***flask*** framework crawling web page.
 ![Screenshot](/images/Screenshots/Capture.PNG "Screenshot")
 
 ## Usage
@@ -12,7 +12,7 @@ Image Crawler uses python for crawling web page and ***flask*** for UI changes.
 	enter URL and see the magic!
 
 ## License
-Image Crawler comes under MIT 2016 License.
+MIT © Rahul Yadav
 
 ## Note
 This app is for learning purposes, and just a prototyping for reference, and not meant for any use in production / commercial purposes.
