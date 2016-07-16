@@ -7,7 +7,8 @@ Image Crawler uses python's ***flask*** framework crawling web page.
 
 ## Usage
 	git clone https://github.com/yadav-rahul/Image-Crawler & cd Image-Crawler
-	python main.py
+	sudo pip3 install -r requirements.txt 
+	python3 main.py
 	got to http://localhost:5000/ in your browser
 	enter URL and see the magic!
 
